@@ -6,9 +6,6 @@ import Divider from 'material-ui/Divider';
 import { Meteor } from 'meteor/meteor';
 import { createContainer } from 'meteor/react-meteor-data';
 
-import '../../styles/paper.css';
-import '../../styles/face.css';
-
 
 const borderColor={};
 class App extends Component {
@@ -34,7 +31,7 @@ class App extends Component {
     });
     setTimeout(() => {
       browserHistory.push('/dashboard');
-    }, 1000);
+    }, 500);
   }
 
   renderText () {
@@ -76,7 +73,7 @@ class App extends Component {
           <div
             style={style}
             className="fill"/>
-          </div>);
+        </div>);
         });
       }
 

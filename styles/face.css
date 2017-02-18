@@ -46,6 +46,10 @@
   border-bottom: solid 4px #80d4ff;
 
 }
+.fill{
+  height: 100%;
+  border-radius: 30px;
+}
 .smile:before {
   content: "";
   position: absolute;
@@ -63,11 +67,11 @@
 .best:before {
   border-top: solid 4px #80d4ff;
 }
-.big{
+/*.big{
   height: 300px;
   width: 300px;
   border-radius: 300px;
   border: solid 10px #80d4ff;
 
 
-}
+}*/

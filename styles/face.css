@@ -3,7 +3,7 @@
   justify-content: space-around;
   margin-left: 300px;
   margin-right: 300px;
-  margin-top: 100px;
+  margin-top: 130px;
   opacity: 0.8;
 }
 
@@ -19,8 +19,7 @@
   margin: auto;
 
 }
-
-.worst:before {
+.sad:before{
   content: "";
   position: absolute;
   left: 20%;
@@ -30,23 +29,13 @@
   border-top: solid 4px #80d4ff;
   border-right: solid 4px #80d4ff;
   border-left: solid 4px #80d4ff;
-  border-bottom: solid 3px #80d4ff;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
 }
-.bad:before {
-  content: "";
-  position: absolute;
-  left: 22%;
-  bottom: 14px;
-  height: 8px;
-  width: 28px;
-  border-top: solid 4px #80d4ff;
-  border-right: solid 4px #80d4ff;
-  border-left: solid 4px #80d4ff;
-  border-top-left-radius: 500px;
-  border-top-right-radius: 500px;
+.worst:before {
+  border-bottom: solid 3px #80d4ff;
 }
+
 .regular:before {
   content: "";
   position: absolute;
@@ -57,11 +46,7 @@
   border-bottom: solid 4px #80d4ff;
 
 }
-.fill{
-  height: 100%;
-  border-radius: 30px;
-}
-.good:before {
+.smile:before {
   content: "";
   position: absolute;
   left: 20%;
@@ -76,17 +61,13 @@
   border-bottom-right-radius: 40px;
 }
 .best:before {
-  content: "";
-  position: absolute;
-  left: 20%;
-  bottom: 10px;
-  height: 15px;
-  width: 30px;
   border-top: solid 4px #80d4ff;
-  border-bottom: solid 4px #80d4ff;
-  border-right: solid 4px #80d4ff;
-  border-left: solid 4px #80d4ff;
-  border-bottom: solid 4px #80d4ff;
-  border-bottom-left-radius: 40px;
-  border-bottom-right-radius: 40px;
+}
+.big{
+  height: 300px;
+  width: 300px;
+  border-radius: 300px;
+  border: solid 10px #80d4ff;
+
+
 }

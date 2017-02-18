@@ -9,6 +9,8 @@ import { createContainer } from 'meteor/react-meteor-data';
 import '../../styles/paper.css';
 import '../../styles/face.css';
 
+
+const borderColor={};
 class Root extends Component {
 
   constructor(props) {
@@ -19,7 +21,8 @@ class Root extends Component {
   }
 
   handleClick(service, rating) {
-    Meteor.call('ratings.insert', service, rating, (err, average) => {
+    borderColor.borderColor="#FFCA3A";
+    Meteor.call('ratings.insert', service, rating+1, (err, average) => {
       console.log(average);
       if (!err) {
         this.setState({
@@ -35,17 +38,21 @@ class Root extends Component {
     const faces=['worst', 'bad', 'regular', 'good', 'best'].map((face, i)=>{
       const className=`circle ${face}`;
       const style={};
-      console.log(this.state.average, i);
-      if (i===Math.floor(this.state.average+1)) {
+      if (this.state.average>0) {
+        style.borderColor="#FFCA3A";
+      }
+
+      if (i===Math.floor(this.state.average)) {
         const percentage = Math.floor((this.state.average-i)*100);
         console.log(percentage);
-        style.background=`linear-gradient(to right, yellow ${percentage}%, white 0)`;
+        style.background=`linear-gradient(to right, #FFCA3A ${percentage}%, white 0)`;
       } else {
-      this.state.average>i ? style.backgroundColor='yellow':style.backgroundColor='white';
+        this.state.average>i ? style.backgroundColor='#FFCA3A':style.backgroundColor='white';
       }
       return (
         <div
           key = {face}
+          style={borderColor}
           onClick={()=>{
             this.handleClick('daily', i);
           }}
@@ -60,8 +67,10 @@ class Root extends Component {
             <div className="paper rear"/>
             <div className="paper ">
               <div className="content" >
-                <h1>How did we do? Please rate your experience</h1>
-                <h2> We're always looking for ways to improve our customer experience</h2>
+                <div className="text">
+                  <h1>How did we do? Please rate your experience</h1>
+                  <h3> We're always looking for ways to improve our customer experience</h3>
+                </div>
               </div>
 
               <div className="ratings">

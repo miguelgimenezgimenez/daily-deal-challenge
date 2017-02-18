@@ -1,3 +1,7 @@
+* {
+  font-family: Raleway, serif;
+}
+
 body , html , #render-target {
   margin: 0;
   height: 100%;
@@ -10,4 +14,15 @@ body , html , #render-target {
   background-size: cover;
   top:0;
   bottom: 0;
+}
+
+
+h1 {
+  color : gray;
+  opacity: 0.5;
+}
+h3 {
+  color : lightgray;
+  opacity: 0.5;
+
 }

@@ -4,6 +4,7 @@
   margin-left: 300px;
   margin-right: 300px;
   margin-top: 100px;
+  opacity: 0.8;
 }
 
 
@@ -11,7 +12,7 @@
   height: 60px;
   width: 60px;
   border-radius: 60px;
-  border: solid 3px #80d4ff;
+  border: solid 4px #80d4ff;
   text-align: center;
   position: relative;
   z-index : 1;
@@ -26,9 +27,9 @@
   bottom: 10px;
   height: 15px;
   width: 30px;
-  border-top: solid 3px #80d4ff;
-  border-right: solid 3px #80d4ff;
-  border-left: solid 3px #80d4ff;
+  border-top: solid 4px #80d4ff;
+  border-right: solid 4px #80d4ff;
+  border-left: solid 4px #80d4ff;
   border-bottom: solid 3px #80d4ff;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
@@ -40,9 +41,9 @@
   bottom: 14px;
   height: 8px;
   width: 28px;
-  border-top: solid 3px #80d4ff;
-  border-right: solid 3px #80d4ff;
-  border-left: solid 3px #80d4ff;
+  border-top: solid 4px #80d4ff;
+  border-right: solid 4px #80d4ff;
+  border-left: solid 4px #80d4ff;
   border-top-left-radius: 500px;
   border-top-right-radius: 500px;
 }
@@ -53,7 +54,7 @@
   bottom: 14px;
   height: 8px;
   width: 30px;
-  border-bottom: solid 3px #80d4ff;
+  border-bottom: solid 4px #80d4ff;
 
 }
 .fill{
@@ -67,10 +68,10 @@
   bottom: 10px;
   height: 15px;
   width: 30px;
-  border-bottom: solid 3px #80d4ff;
-  border-right: solid 3px #80d4ff;
-  border-left: solid 3px #80d4ff;
-  border-bottom: solid 3px #80d4ff;
+  border-bottom: solid 4px #80d4ff;
+  border-right: solid 4px #80d4ff;
+  border-left: solid 4px #80d4ff;
+  border-bottom: solid 4px #80d4ff;
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
 }
@@ -81,11 +82,11 @@
   bottom: 10px;
   height: 15px;
   width: 30px;
-  border-top: solid 3px #80d4ff;
-  border-bottom: solid 3px #80d4ff;
-  border-right: solid 3px #80d4ff;
-  border-left: solid 3px #80d4ff;
-  border-bottom: solid 3px #80d4ff;
+  border-top: solid 4px #80d4ff;
+  border-bottom: solid 4px #80d4ff;
+  border-right: solid 4px #80d4ff;
+  border-left: solid 4px #80d4ff;
+  border-bottom: solid 4px #80d4ff;
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
 }

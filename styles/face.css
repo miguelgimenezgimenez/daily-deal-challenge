@@ -1,13 +1,29 @@
 .ratings {
   display: flex;
   justify-content: space-around;
-  margin-left: 300px;
-  margin-right: 300px;
+  margin-left: 240px;
+  margin-right: 240px;
   margin-top: 130px;
   opacity: 0.8;
 }
 
+.outside {
+  height: 120px;
+  width: 120px;
+  border-radius: 120px;
+  text-align: center;
+  position: relative;
+  z-index : 1;
+  margin: auto;
 
+}
+
+.outside:hover {
+  animation-name: example;
+  animation-duration: 0.5s;
+  transition: width 2s, height 2s, transform 2s;
+
+}
 .circle {
   height: 60px;
   width: 60px;
@@ -17,7 +33,7 @@
   position: relative;
   z-index : 1;
   margin: auto;
-
+  margin-top: 28px;
 }
 .sad:before{
   content: "";
@@ -67,11 +83,15 @@
 .best:before {
   border-top: solid 4px #80d4ff;
 }
-/*.big{
-  height: 300px;
-  width: 300px;
-  border-radius: 300px;
-  border: solid 10px #80d4ff;
-
-
-}*/
+@keyframes example {
+  0%   {
+    background: radial-gradient(purple 10%, white 100%);
+  }
+  25%  {
+    background: radial-gradient(purple 20%,white 80%);
+  }
+  
+  100% {
+    background: radial-gradient(purple 20%,white 80%);
+  }
+}

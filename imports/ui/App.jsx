@@ -5,7 +5,7 @@ import { Ratings } from '../api/ratings.js';
 import Divider from 'material-ui/Divider';
 import { Meteor } from 'meteor/meteor';
 import { createContainer } from 'meteor/react-meteor-data';
-import Faces from './Faces';
+import renderFaces from './Faces';
 
 const borderColor={};
 
@@ -51,7 +51,6 @@ class App extends Component {
         <h1>Thank You</h1>);
       }
 
-
   render() {
     return (
       <div className="background">
@@ -63,7 +62,7 @@ class App extends Component {
             </div>
           </div>
           <div className="ratings">
-            {Faces({
+            {renderFaces({
               handleClick:this.handleClick.bind(this),
               average:this.state.average,
               borderColor:borderColor

@@ -9,7 +9,7 @@
   position: relative;
   z-index : 1;
   /*margin: auto;*/
-
+    left: 500px;
 
 }
 .sad-big:before{

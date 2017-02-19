@@ -30,5 +30,6 @@
   font-size: 180px;
   height: 280px;
   padding-top: 50px;
-
+  position: fixed;
+  left:470px;
 }

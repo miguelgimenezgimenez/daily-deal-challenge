@@ -6,12 +6,12 @@ import '../../styles/dashboard.css';
 import '../../styles/FacesBig.css';
 
 
-let colors= ['red', 'yellow', 'orange','green'];
+let colors= ['darkred', 'darkred','#F2D100', 'orange','#6EBD19'];
 let style;
 let fontColor;
 const auxText={
-  fontSize:40,
-  color:"rgba(0, 0, 0, 0.15)",
+  fontSize:80,
+  color:"rgba(0, 0, 0, 0.5)",
 
 }
 class Dashboard extends React.Component {
@@ -49,7 +49,12 @@ renderScore(){
               <div className="score"
                 style={fontColor}>
                   {this.renderScore()}
-                  <span style={auxText}>%</span>
+                  <span style={auxText}>%
+                    <p style={{
+                      fontSize:20
+                    }}>CUSTOMER SATISFACTION RATING</p>
+                  </span>
+
               </div>
               <div className={this.state.className}
               style={style}>

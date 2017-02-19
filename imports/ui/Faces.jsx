@@ -13,7 +13,6 @@ const borderColor={};
 
     if (i===Math.floor(props.average)) {
       const percentage = Math.floor((props.average-i)*100);
-      console.log(percentage);
       style.background=`linear-gradient(to right, #FFCA3A ${percentage}%, white 0)`;
     } else {
       props.average>i ? style.backgroundColor='#FFCA3A':style.backgroundColor='white';

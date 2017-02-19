@@ -11,7 +11,7 @@ let style;
 let fontColor;
 const auxText={
   fontSize:80,
-  color:"rgba(0, 0, 0, 0.5)",
+  color:"rgba(0, 0, 0, 0.3)",
 
 }
 class Dashboard extends React.Component {
@@ -23,8 +23,8 @@ class Dashboard extends React.Component {
     }
   }
   componentDidMount() {
-    const classNames=['sad-big worst-big', 'sad-big', 'regular-big', 'smile-big', 'smile best-big'];
-    const rating = Math.floor(this.props.ratings[0].average);
+    const classNames=['sad-big worst-big', 'sad-big', 'regular-big', 'smile-big', 'smile-big best-big'];
+    const rating = Math.floor(this.props.ratings[0].average-0.1);
     style = {background:colors[rating], color:colors[rating]};
     fontColor={color:colors[rating]}
     this.setState({
@@ -51,7 +51,9 @@ renderScore(){
                   {this.renderScore()}
                   <span style={auxText}>%
                     <p style={{
-                      fontSize:20
+                      fontFamily: 'Fjala One',
+                      fontSize:15,
+                      fontWeight:'bolder'
                     }}>CUSTOMER SATISFACTION RATING</p>
                   </span>
 

@@ -32,7 +32,7 @@ class App extends Component {
     });
     setTimeout(() => {
       browserHistory.push('/dashboard');
-    }, 500);
+    }, 1500);
   }
 
   //======================================================

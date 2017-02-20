@@ -8,11 +8,12 @@
 .container {
   display: flex;
   width: 100%;
-  top: 250px;
   position: fixed;
   justify-content: space-around;
   align-items: center;
-
+  z-index: -1;
+  padding-bottom: 250px;
+  height: 100%;
 
 }
 

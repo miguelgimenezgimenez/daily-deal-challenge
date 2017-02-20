@@ -18,21 +18,28 @@ const renderFaces=(props)=>{
       props.average>i ? style.backgroundColor='#FFCA3A':style.backgroundColor='white';
     }
     return (
-      <div className="outside"
+      <div
+        className="overlap"
         key={face}
+        onClick={()=>{
+          props.handleClick('daily', i);
+        }}
         >
+          <div className="outside">
+            <div className="inside">
+              <div className="hole"/>
+            </div>
+          </div>
         <div
           // key = {face}
           style={props.borderColor}
-          onClick={()=>{
-            props.handleClick('daily', i);
-          }}
+
           className={className} >
           <div
             style={style}
             className="fill"/>
           </div>
-        </div>
+      </div>
       );
     });
   }

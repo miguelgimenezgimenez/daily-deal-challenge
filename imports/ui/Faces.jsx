@@ -12,10 +12,9 @@ const renderFaces=(props)=>{
       fillContainerClass="fill-container"
       style.borderColor="#FFCA3A";
     }
-    const percentage = Math.floor((props.average-i)*100);
-    style.background=`linear-gradient(to right, #FFCA3A ${percentage}%, white 0)`;
+    const percentage = Math.floor((props.average/5)*100);
+    style.background=`linear-gradient(to right, #FFCA3A ${percentage}%, white 0%)`;
     style.left=-120*i;
-
     // multiply 700px which is the total length of the rating bar
     style.width=700;
     style.backgroundColor='#FFCA3A'

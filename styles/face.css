@@ -113,6 +113,18 @@
 .fill{
   overflow: hidden;
   height: 100%;
+  position: relative;
+  z-index: -1;
+}
+.fill-container{
+  position: relative;
+  z-index: -1;
+  height: 80px;
+  overflow: hidden;
+  width: 0;
+  animation-name: percentage;
+  animation-duration: 2s;
+  animation-delay: 0s;
 }
 
 .smile:before {
@@ -167,7 +179,14 @@
 }
 
 
-
+@keyframes percentage {
+  0% {
+    width: 0;
+  }
+  100%{
+    width: 700px;
+  }
+}
 
 
 

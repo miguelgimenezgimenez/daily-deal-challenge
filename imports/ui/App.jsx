@@ -30,9 +30,9 @@ class App extends Component {
         alert('Something bad happened.');
       }
     });
-    setTimeout(() => {
-      browserHistory.push('/dashboard');
-    }, 1500);
+    // setTimeout(() => {
+    //   browserHistory.push('/dashboard');
+    // }, 1500);
   }
 
   //======================================================

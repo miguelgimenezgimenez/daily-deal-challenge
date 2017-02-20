@@ -14,6 +14,7 @@ const renderFaces=(props)=>{
     }
     const percentage = Math.floor((props.average/5)*100);
     style.background=`linear-gradient(to right, #FFCA3A ${percentage}%, white 0%)`;
+    //Each container is 120px so I move each one its index times 120px
     style.left=-120*i;
     // multiply 700px which is the total length of the rating bar
     style.width=700;
